@@ -15,7 +15,7 @@ body:
   - type: textarea
     id: todo
     attributes:
-      label: Objective
+      label: Todo
       description: "What needs to be done to achieve the objective."
       value: |
         - [ ] Investigate
