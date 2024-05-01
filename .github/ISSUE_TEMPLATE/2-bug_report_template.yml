@@ -1,0 +1,80 @@
+name: Bug Report
+description: Template for reporting a bug or issue with the website.
+title: "Bug Report: [Brief Description]"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please provide detailed information about the bug or issue you've encountered."
+
+  - type: input
+    id: bug-title
+    attributes:
+      label: Bug Title
+      description: "Enter a brief title that summarizes the bug."
+      placeholder: "e.g., Error message displayed on contact form submission"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: "Provide a detailed description of the bug."
+      placeholder: "Describe what the bug is, what you expected to happen, and what actually happened."
+    validations:
+      required: true
+
+  - type: input
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: "List the steps to reproduce the behavior."
+      placeholder: "1. Go to '...' 2. Click on '....' 3. Scroll down to '....' 4. See error"
+    validations:
+      required: true
+
+  - type: input
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: "Describe what you expected to happen."
+      placeholder: "The form should submit without any error messages."
+    validations:
+      required: true
+
+  - type: input
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: "Describe what actually happened."
+      placeholder: "An error message appears saying 'Submission failed.'"
+    validations:
+      required: true
+
+  - type: input
+    id: browser-device
+    attributes:
+      label: Browser/Device Information
+      description: "Provide details about the browser and device where the bug was encountered."
+      placeholder: "e.g., Chrome on Windows 10, iPhone 12 Safari"
+    validations:
+      required: false
+
+  - type: input
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: "If possible, add screenshots to help explain the problem."
+      placeholder: "Attach screenshots or provide a link to images."
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: Additional Information
+      description: "Any other information or context about the problem."
+      placeholder: "Anything else that might be relevant to the issue."
+    validations:
+      required: false
